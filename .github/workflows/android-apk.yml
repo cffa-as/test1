@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Check Node.js version
+        run: node -v
+
       - name: Build Next.js static site
         run: npm run build
 
